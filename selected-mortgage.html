@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/selected-mortgage.css">
+    <link rel="stylesheet" href="assets/css/user-registration.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <title>Selected Mortgage</title>
+</head>
+
+<body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename">Mortgage <span> Solutions</span></h1>
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html" >Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              
+              <li class="dropdown"><a href="#"><span>Country</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Ghana</a></li>
+                  <li><a href="#">Nigeria</a></li>
+                  <li><a href="#">Tanzania</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="user-registration.html" >Sign Up</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+        </div>
+      </header>
+    <section class="user--hero">
+        <div class="overlay--1"></div>
+        <h3>Selected Mortgage</h3>
+    </section>
+
+    <section class="sel-container">
+        <div class="header">
+            <h1>
+                3 Bed Room Apartment
+            </h1>
+            <div class="price">
+                GH&#8373; 54,000
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <div class="p-container">
+                    <div class="property-details">
+                        <p>Land Size (Area) 46 feet by 115 feet (5,290 sq.ft)</p>
+                        <p>Build Area 3,720 sq.ft</p>
+                        <h2>Property Details:</h2>
+                        <table>
+                            <tr>
+                                <th>Property Type:</th>
+                                <td>Apartment</td>
+                            </tr>
+                            <tr>
+                                <th>Property Status:</th>
+                                <td>For Sale</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="schedule-tour">
+                        <h2>Schedule Tour</h2>
+                        <form class=" form  needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="tour-date">Tour Date</label>
+                                <input type="date" id="tour-date" name="tour-date" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Please choose date.
+                                </div>
+
+
+                            </div>
+                            <div class="form-group">
+                                <label for="tour-time">Tour time</label>
+                                <input type="text" id="tour-time" name="tour-time" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Please enter tour time.
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Your Address</label>
+                                <input type="text" id="address" name="address" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Please enter address
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Your Phone</label>
+                                <input type="text" id="phone" name="phone" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Please enter your phone number.
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required class="form-control">
+                                <div class="invalid-feedback">
+                                    Please enter your email.
+                                </div>
+
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" required class="form-control"></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your mortgage amount.
+                                </div>
+
+                            </div>
+                            <div class="form-group full-width">
+                                <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="property-video">
+                    <h2>
+                        Property Video
+                    </h2>
+                    <img alt="Property video thumbnail" height="400"
+                        src="https://storage.googleapis.com/a1aa/image/Ea4cjLHoIbZ3HlQf4fTg5LJGZ3ANPDQau4cBeQ5Oc3pJvZSnA.jpg"
+                        width="600" />
+                </div>
+                <div class="property-address">
+                    <h2>
+                        Property Address
+                    </h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.72272899964!2d-0.2621340440994589!3d5.591373813266819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra!5e0!3m2!1sen!2sgh!4v1729589958258!5m2!1sen!2sgh"
+                        width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="review">
+                    <h2>
+                        Review
+                    </h2>
+                    <div class="rating">
+                        <i class="fas fa-user-circle fa-3x">
+                        </i>
+                        <span>
+                            Overall Rating
+                        </span>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                        <i class="fas fa-star">
+                        </i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Review Content
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="card">
+                    <img alt="Real estate company logo" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/LAQgnAOY6lYyBJEMRQlR6bCZXUGJ1J7yWqate5ZNSqOzbm0JA.jpg"
+                        width="200" />
+                    <h3>
+                        Platini Estate Limited
+                    </h3>
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Platini Homes
+                    </span>
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                        +233 24 123 4567
+                    </span>
+                    <hr>
+                    <p>
+                        Platini Estate Limited will be home to over
+                        80 families with an abundance of home styles
+                        and interior designs. Paved…
+                    </p>
+                    <button class="buttons">
+                       View Listings
+                    </button>
+                </div>
+                <div class="calculator-container">
+                    <form class=" form  needs-validation" novalidate>
+                    <h2>Mortgage Payment Calculator</h2>
+                    <hr>
+                    <label for="mortgage-amount">Mortgage Amount:</label>
+                    <input type="text" id="mortgage-amount" value="GHS2500" readonly required class="form-control">
+                    <div class="invalid-feedback">
+                        Please enter your mortgage amount.
+                      </div>
+                
+                    <label for="interest-rate">Interest Rate (%):</label>
+                    <input type="text" id="interest-rate" required class="form-control">
+                    <div class="invalid-feedback">
+                        Please enter interest rate.
+                      </div>
+                
+                    <label for="mortgage-term">Mortgage Term (Year):</label>
+                    <input type="text" id="mortgage-term" required class="form-control">
+                    <div class="invalid-feedback">
+                        Please enter your mortgage term.
+                      </div>
+                
+                    <label for="deposit">Deposit (GHS):</label>
+                    <input type="text" id="deposit"required class="form-control">
+                    <div class="invalid-feedback">
+                        Please enter your deposit .
+                      </div>
+                
+                    <div class="buttons">
+                        <button class="calculate-btn">CALCULATOR</button>
+                        <button class="reset-btn">RESET</button>
+                    </div>
+
+                </form>
+                </div>
+                <div class="h-container">
+                    <div class="head">
+                        Recent Property
+                    </div>
+                    <div class="property-item">
+                        <img alt="Image of a 3 Bed Room Apartment" class="property-image" height="100"
+                            src="https://storage.googleapis.com/a1aa/image/pT3fc2NMyeiwR0weGUSbZDnh3x3pHyNsz0mELK1teiqvohlOB.jpg"
+                            width="100" />
+                        <div class="property-details">
+                            <div class="property-title">
+                                3 Bed Room Apartment
+                            </div>
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt">
+                                </i>
+                                Platini Homes
+                            </div>
+                            <div class="property-price">
+                                GH<span>&#8373;</span> 24,000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-item">
+                        <img alt="Image of a 3 Bed Room Apartment" class="property-image" height="100"
+                            src="https://storage.googleapis.com/a1aa/image/pT3fc2NMyeiwR0weGUSbZDnh3x3pHyNsz0mELK1teiqvohlOB.jpg"
+                            width="100" />
+                        <div class="property-details">
+                            <div class="property-title">
+                                3 Bed Room Apartment
+                            </div>
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt">
+                                </i>
+                                Platini Homes
+                            </div>
+                            <div class="property-price">
+                                GH<span>&#8373;</span> 24,000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-item">
+                        <img alt="Image of a 3 Bed Room Apartment" class="property-image" height="100"
+                            src="https://storage.googleapis.com/a1aa/image/pT3fc2NMyeiwR0weGUSbZDnh3x3pHyNsz0mELK1teiqvohlOB.jpg"
+                            width="100" />
+                        <div class="property-details">
+                            <div class="property-title">
+                                3 Bed Room Apartment
+                            </div>
+                            <div class="property-location">
+                                <i class="fas fa-map-marker-alt">
+                                </i>
+                                Platini Homes
+                            </div>
+                            <div class="property-price">
+                                GH<span>&#8373;</span> 24,000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="butons">
+            <button class="continue">CONTINUE</button>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer light-background">
+
+        <div class="container">
+          <div class="row gy-3">
+            <div class="col-lg-3 col-md-6 d-flex">
+              <i class="bi bi-geo-alt icon"></i>
+              <div class="address">
+                <h4>Address</h4>
+                <p>Cantoments Street</p>
+                <p>Accra, Ghana</p>
+                <p></p>
+              </div>
+    
+            </div>
+    
+            <div class="col-lg-3 col-md-6 d-flex">
+              <i class="bi bi-telephone icon"></i>
+              <div>
+                <h4>Contact</h4>
+                <p>
+                  <strong>Phone:</strong> <span>+233200556323</span><br>
+                  <strong>Email:</strong> <span>info@Mortgagesolutions.com</span><br>
+                </p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 d-flex">
+              <i class="bi bi-clock icon"></i>
+              <div>
+                <h4>Opening Hours</h4>
+                <p>
+                  <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+                  <strong>Sunday</strong>: <span>Closed</span>
+                </p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6">
+              <h4>Follow Us</h4>
+              <div class="social-links d-flex">
+                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="container copyright text-center mt-4">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">Mortgage Solutions</strong> <span>All Rights Reserved</span></p>
+          <div class="credits">
+            
+            Designed by <a href="https://GISE.com">GISE</a>
+          </div>
+        </div>
+    
+      </footer>
+
+      <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Preloader -->
+    <div id="preloader"></div>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    
+  
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/selected-mortgage.js"></script>
+    
+</body>
+
+</html>

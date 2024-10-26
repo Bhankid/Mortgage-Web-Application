@@ -1,0 +1,182 @@
+/*--------------------------------------------------------------
+  # About Section
+  --------------------------------------------------------------*/
+  .about .content .who-we-are {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+  }
+  
+  .about .content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    padding-bottom: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 1.25rem;
+    margin-right: 4px;
+    color: var(--accent-color);
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about .content .read-more {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about .content .read-more i {
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 0;
+    transition: 0.3s;
+  }
+  
+  .about .content .read-more:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    padding-right: 19px;
+  }
+  
+  .about .content .read-more:hover i {
+    margin-left: 10px;
+  }
+  
+  .about .about-images img {
+    border-radius: 10px;
+  }
+
+  
+  /*--------------------------------------------------------------
+  # Stats Section
+  --------------------------------------------------------------*/
+  .stats .stats-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .stats .stats-item i {
+    color: var(--accent-color);
+    font-size: 42px;
+    line-height: 0;
+    margin-right: 20px;
+  }
+  
+  .stats .stats-item span {
+    color: var(--heading-color);
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+  }
+  
+  .stats .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 16px;
+  }
+
+  /*--------------------------------------------------------------
+  # Features Section
+  --------------------------------------------------------------*/
+ .features .features-image {
+  position: relative;
+  min-height: 400px;
+}
+
+.features .features-image img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.features h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.features h3:after {
+  content: "";
+  background: var(--accent-color);
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+
+.features .icon-box {
+  margin-top: 50px;
+}
+
+.features .icon-box i {
+  color: var(--accent-color);
+  background-color: var(--surface-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  font-size: 28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  line-height: 0;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.features .icon-box:hover i {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.features .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.features .icon-box h4 a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.features .icon-box h4 a:hover {
+  color: var(--accent-color);
+}
+
+.features .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+} 
+  

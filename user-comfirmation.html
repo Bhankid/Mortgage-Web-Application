@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/user-registration.css">
+    <link rel="stylesheet" href="assets/css/user-comfirmation.css">
+
+    <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <script src="assets/js/user-comfirmation.js" defer></script>
+    <title>User Registration</title>
+</head>
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Mortgage <span> Solutions</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          
+          <li class="dropdown"><a href="#"><span>Country</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Ghana</a></li>
+              <li><a href="#">Nigeria</a></li>
+              <li><a href="#">Tanzania</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="user-registration.html" class="active">Sign Up</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+<body>
+    <section class="user--hero">
+        <div class="overlay--1"></div>
+        <h3>User Registration</h3>
+    </section>
+
+    <!-- Confirmation -->
+    <section class="admin-confirm">
+      <form class="form  needs-validation" novalidate></form>
+        <h2>Select One</h2>
+        <div class="radio-container">
+            <div>
+                <input type="radio" id="private-sale" name="sale-type" value="comfirm" checked="yes" onclick="redirectToSelectedPage()">
+                <label for="private-sale">Private Sale</label>
+            </div>
+            <div>
+              <a href="">
+                <input type="radio" id="business-sale" value="comfirm-b"  name="sale-type" onclick="newPage()">
+              </a>
+                
+                <label for="business-sale">Business Sale</label>
+            </div>
+        </div>
+
+        <!-- Sales Container -->
+        <section class="sales-container">
+            <h2><span>Private / Business Sale</span></h2>
+
+            <!-- Picture Placeholder and Browse File -->
+            <div class="picture-placeholder-header">
+                <h6>Picture (Photo)<span class="required">*</span></h6>
+            </div>
+            <div class="picture-placeholder-container">
+                <div class="picture-placeholder">
+                    <div class="picture-placeholder-img">
+                        <!-- The selected picture will be displayed here -->
+                        <img id="selected-picture" src="" alt="Selected Picture">
+                    </div>
+                </div>
+                <div class="browse-file-container">
+                    <input type="file" id="browse-file" name="browse-file" value="Browse File">
+                    <label for="browse-file" style="display: none;">Browse File</label>
+                </div>
+            </div>
+        </section>
+
+        <div class="form--container">
+            
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" required class="form-control">
+
+                        <div class="invalid-feedback">
+                          Please enter your name.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="residential-address">Residential Address <span
+                                class="field-required">*</span></label>
+                        <input type="text" id="residential-address" name="residential-address"
+                            placeholder="Enter your Residential Address" required class="form-control">
+
+                            <div class="invalid-feedback">
+                              Please enter your residential address.
+                            </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email Address" required class="form-control">
+
+                        <div class="invalid-feedback">
+                          Please enter your email.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="digital-address">Digital Address <span class="required">*</span></label>
+                        <input type="text" id="digital-address" name="digital-address"
+                            placeholder="Enter your Digital Address" required class="form-control">
+
+                            <div class="invalid-feedback">
+                              Please enter your digital address.
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="identification-card">Identification Card <span class="required">*</span></label>
+                        <input type="text" id="identification-card" name="identification-card"
+                            placeholder="Enter your Ghana card Number, Tin, National ID" required class="form-control">
+
+                            <div class="invalid-feedback">
+                              Please enter your identification card.
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="identification-card">Identification Card <span class="required">*</span></label>
+                        <input type="text" id="identification-card" name="identification-card"
+                            placeholder="Enter your Ghana card Number, Tin, National ID" required class="form-control">
+
+                            <div class="invalid-feedback">
+                              Please enter your identification card.
+                            </div>
+                    </div>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="upload-identification" name="upload-identification" class="file-input"
+                            required class="form-control">
+
+                            
+                        <label for="upload-identification" class="file-label">Choose Pictures</label>
+                    </div>
+                    <p class="note"><span class="note-highlight">*NOTE:</span> Upload Front and Back of the Card</p>
+                </div>
+              
+        </div>
+
+        <!-- Bank confirmation -->
+        <div class="bank-container">
+            <h1>Bank Details</h1>
+            <hr>
+           
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Bank Name <span class="required">*</span></label>
+                        <input type="text" placeholder="Enter your Bank Name" required class="form-control">
+
+                        <div class="invalid-feedback">
+                          Please enter your bank name.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Branch <span class="bank-required">*</span></label>
+                        <input type="text" placeholder="Enter your Branch" required class="form-control">
+
+                        <div class="invalid-feedback">
+                          Please enter branch.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Account Name <span class="required">*</span></label>
+                        <input type="text" placeholder="Enter your Account Name" required class="form-control">
+
+                        <div class="invalid-feedback">
+                          Please enter your account name.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Account Number <span class="required">*</span></label>
+                        <input type="text" placeholder="Enter your Account Number" required class="form-control">
+
+                        <div class="invalid-feedback">
+                          Please enter your account number.
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    
+                    <button type="submit"><a href="about-customer.html">CONTINUE</a></button>
+                </div>
+              </form>
+        </div>
+    
+    </section>
+
+    <footer id="footer" class="footer light-background">
+
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-geo-alt icon"></i>
+            <div class="address">
+              <h4>Address</h4>
+              <p>Cantoments Street</p>
+              <p>Accra, Ghana</p>
+              <p></p>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-telephone icon"></i>
+            <div>
+              <h4>Contact</h4>
+              <p>
+                <strong>Phone:</strong> <span>+233200556323</span><br>
+                <strong>Email:</strong> <span>info@Mortgagesolutions.com</span><br>
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-clock icon"></i>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>
+                <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+                <strong>Sunday</strong>: <span>Closed</span>
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6">
+            <h4>Follow Us</h4>
+            <div class="social-links d-flex">
+              <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Mortgage Solutions</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          
+          Designed by <a href="https://GISE.com">GISE</a>
+        </div>
+      </div>
+  
+    </footer>
+  
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Preloader -->
+    <div id="preloader"></div>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    
+  
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/user-comfirmation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+.cont-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.105);
+    margin-bottom: 20px;
+}
+.contact-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-info i {
+    color: #0c96ab;
+    margin-right: 10px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.buttons a:hover {
+    text-decoration: none;
+    color: white;
+}
+.buttons .inquiry {
+    background-color: #007F92;
+}
+.buttons .faq {
+    background-color: #007F92;
+}
+.map {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.map img {
+    width: 100%;
+    height: auto;
+}
+.map .location {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.map .location i {
+    color: #007F92;
+    margin-right: 10px;
+}
+
+ /*--------------------------------------------------------------
+  # Global Footer
+  --------------------------------------------------------------*/
+  .footer {
+    color: var(--default-color);
+    background-color: #9aeffc;
+    font-size: 14px;
+    padding: 40px 0 0 0;
+    position: relative;
+  }
+  
+  .footer .icon {
+    color: var(--accent-color);
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .footer .address p {
+    margin-bottom: 0px;
+  }
+  
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .footer .copyright {
+    padding: 25px 0;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
+  
+  .footer .copyright p {
+    margin-bottom: 0;
+  }
+  
+  .footer .credits {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Preloader
+  --------------------------------------------------------------*/
+  #preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    overflow: hidden;
+    background: var(--background-color);
+    transition: all 0.6s ease-out;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #ffffff;
+    border-color: var(--accent-color) transparent var(--accent-color) transparent;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1.5s linear infinite;
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Scroll Top Button
+  --------------------------------------------------------------*/
+  .scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background-color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .scroll-top i {
+    font-size: 24px;
+    color: var(--contrast-color);
+    line-height: 0;
+  }
+  
+  .scroll-top:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+    color: var(--contrast-color);
+  }
+  
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }

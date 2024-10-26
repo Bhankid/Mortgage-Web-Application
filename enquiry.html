@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/enquiry.css">
+    <link rel="stylesheet" href="assets/css/user-registration.css">
+    <title>Inquiry</title>
+
+    <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename">Mortgage <span> Solutions</span></h1>
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html" >Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="enquiry.html" class="active">Enquiry</a></li>
+              <li><a href="contact-page.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="user-registration.html">Sign Up</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+        </div>
+      </header>
+
+<section class="user--hero">
+    <div class="overlay--1"></div>
+    <h3>Inquiry</h3>
+</section>
+
+    <div class="inq-container">
+        <form class="needs-validation" novalidate>
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" placeholder="Enter your full name" required class="form-control">
+                    <div class="invalid-feedback">
+                      Please enter full name
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-type">Inquiry Type <span class="required">*</span></label>
+                    <select id="inquiry-type" required class="form-control">
+                        <option>Select Inquiry type</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please choose enquiry type
+                    </div>
+                </div>
+            </div>
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" placeholder="Enter your email address" required class="form-control">
+                    <div class="invalid-feedback">
+                      Please enter your email
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required class="form-control">
+                    <div class="invalid-feedback">
+                      Please enter your phone number
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Contact Address</label>
+                <input type="text" id="address" placeholder="Enter your contact address" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Brief Description <span class="required">*</span></label>
+                <textarea id="description" rows="4" placeholder="Enter your brief description here" required class="form-control"></textarea>
+                <div class="invalid-feedback">
+                  Please enter description
+                </div>
+            </div>
+            <div class="form-group-checkbox">
+                <input type="checkbox" id="terms" class="form-control">
+                
+                <label for="terms">Check here to indicate that you have read and agree to the our <a href="#">terms and
+                        conditions</a>.</label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>        
+            </div>
+            <div class="form-actions">
+                <button type="reset" class="reset-btn">RESET</button>
+                <button type="submit" class="submit-btn">SUBMIT DETAILS</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Help Section -->
+    <section class="help">
+        <div class="overlay"></div>
+        <h2 class="help--heading">WE ARE HERE TO HELP YOU</h2>
+        <p class="help--para">
+            Our mission is to deliver reliable and resonalble servies and we are always happy to help you.
+        </p>
+        <div class="help--box">
+            <h3 class="box--txt">MAKE AN INQUIRY</h3>
+        </div>
+        <div class="help--box">
+            <h3 class="box--txt">CONTACT US</h3>
+        </div>
+        <div class="help--box">
+            <h3 class="box--txt">TALK TO ADVISOR</h3>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer light-background">
+
+        <div class="container">
+          <div class="row gy-3">
+            <div class="col-lg-3 col-md-6 d-flex">
+              <i class="bi bi-geo-alt icon"></i>
+              <div class="address">
+                <h4>Address</h4>
+                <p>Cantoments Street</p>
+                <p>Accra, Ghana</p>
+                <p></p>
+              </div>
+    
+            </div>
+    
+            <div class="col-lg-3 col-md-6 d-flex">
+              <i class="bi bi-telephone icon"></i>
+              <div>
+                <h4>Contact</h4>
+                <p>
+                  <strong>Phone:</strong> <span>+233200556323</span><br>
+                  <strong>Email:</strong> <span>info@Mortgagesolutions.com</span><br>
+                </p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 d-flex">
+              <i class="bi bi-clock icon"></i>
+              <div>
+                <h4>Opening Hours</h4>
+                <p>
+                  <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+                  <strong>Sunday</strong>: <span>Closed</span>
+                </p>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6">
+              <h4>Follow Us</h4>
+              <div class="social-links d-flex">
+                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="container copyright text-center mt-4">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">Mortgage Solutions</strong> <span>All Rights Reserved</span></p>
+          <div class="credits">
+            
+            Designed by <a href="https://GISE.com">GISE</a>
+          </div>
+        </div>
+    
+      </footer>
+    
+      <!-- Scroll Top -->
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+      <!-- Preloader -->
+      <div id="preloader"></div>
+    
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    
+      <!-- Main JS File -->
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/enquiry.js"></script>
+      
+</body>
+</html>
